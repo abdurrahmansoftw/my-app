@@ -13,8 +13,8 @@ export class ProductComponent {
   products: any[] = [];
 
   constructor(private DataService: DataService) {
-    this.DataService.getProducts().subscribe((products: any) => {
-      this.products = products;
+    this.DataService.getProducts().subscribe((data: any) => {
+      this.products = data;
     });
   }
 }
