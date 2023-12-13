@@ -5,11 +5,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class DataService {
-  private apiUrl =
-    'https://pixabay.com/api/?key=40549253-3f104bf78d85284b0b06b3882&q=yellow+flowers&image_type=photo&pretty=true';
+  private apiUrl = 'https://fakestoreapi.com/products';
 
   constructor(private http: HttpClient) {}
-  getPixabays() {
+  getProducts() {
     return this.http.get(this.apiUrl);
   }
 }
