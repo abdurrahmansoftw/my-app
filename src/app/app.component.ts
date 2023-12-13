@@ -5,7 +5,6 @@ import { RouterOutlet } from '@angular/router';
 import { DataService } from './data.service';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { ProductComponent } from './product/product.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +14,6 @@ import { ProductComponent } from './product/product.component';
     RouterOutlet,
     HttpClientModule,
     HeaderComponent,
-    ProductComponent,
     FooterComponent,
   ],
   providers: [DataService],
