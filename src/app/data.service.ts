@@ -5,10 +5,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class DataService {
-  private apiUrl = 'https://jsonplaceholder.typicode.com/photos';
+  private apiUrl =
+    'https://pixabay.com/api/?key=40549253-3f104bf78d85284b0b06b3882&q=yellow+flowers&image_type=photo&pretty=true';
 
   constructor(private http: HttpClient) {}
-  getPhotos() {
+  getPixabays() {
     return this.http.get(this.apiUrl);
   }
 }
